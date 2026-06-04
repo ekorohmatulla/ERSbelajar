@@ -1,0 +1,314 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+a,
+table,
+tr,
+td,
+th,
+form,
+button,
+input,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+.cf {
+  zoom: 1;
+}
+
+@font-face {
+  font-family: "Archivo";
+  src: url(/font/googlefont/Archivo_Black/ArchivoBlack-Regular.ttf)
+    format(truetype);
+}
+
+@font-face {
+  font-family: "playwith";
+  src: url(/font/googlefont/Playwrite_GB_S_Guides/PlaywriteGBSGuides-Italic.ttf)
+    format(truetype);
+}
+
+body {
+  background-image: url(/img/bgbody.png);
+  background-size: cover;
+}
+
+.container {
+  width: 960px;
+  margin: 40px auto; /* untuk topbar nanti */
+  background-color: rgba(255, 255, 255, 0.6);
+  position: relative;
+}
+
+.header1 {
+  padding: 20px;
+}
+
+.header1 h1 {
+  font-size: 40px;
+  font-family: "Archivo", arial;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-shadow: 0px 10px 20px black;
+}
+
+.header1 ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.header1 a {
+  text-decoration: none;
+  font-variant: small-caps;
+  color: navy;
+}
+
+.header1 a:hover {
+  font-size: 25px;
+}
+
+.header1 p {
+  text-align: right;
+  font-size: 8px;
+  text-transform: capitalize;
+  font-family: "playwith", arial;
+}
+
+.imgbg1 {
+  background-image: url(/img/kyotoimg1.png);
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-top: 3px solid salmon;
+  border-bottom: 3px solid cyan;
+}
+
+.imgbg1 .teksoverlay {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.2),
+    rgba(128, 0, 128, 0.2)
+  );
+}
+
+.main {
+  padding: 20px;
+  width: 600px;
+  box-sizing: border-box;
+  float: left;
+}
+
+.main h2 {
+  font-family: monospace;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.main p {
+  text-align: justify;
+  line-height: 1.2;
+  text-indent: 25px;
+  margin-bottom: 20px;
+}
+
+.main ul li {
+  line-height: 1.2;
+  margin-top: 5px;
+  text-align: justify;
+}
+
+.main ul {
+  margin-bottom: 20px;
+}
+
+.side {
+  width: 300px;
+  padding: 20px;
+  box-sizing: border-box;
+  float: left;
+}
+
+.side h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+.side p {
+  margin-bottom: 20px;
+  text-align: justify;
+  text-indent: 10px;
+}
+
+.nikitaimg img {
+  width: 200px;
+  border-radius: 50%;
+  position: absolute;
+  right: 80px;
+  box-sizing: border-box;
+  box-shadow: 0px 10px 10px -1px black;
+  transition: 1s;
+}
+
+.nikitaimg img:hover {
+  position: absolute;
+  right: 75px;
+  width: 250px;
+  box-shadow: 0 10px 10px 5px -1px black;
+}
+
+.next {
+  position: absolute;
+  bottom: 30px;
+  right: 0%;
+}
+.next button {
+  width: 60px;
+  text-transform: capitalize;
+  transition: 100ms;
+}
+
+.next button:hover {
+  width: 100px;
+  text-decoration: none;
+  color: blue;
+  font-family: monospace;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: black;
+}
+.footer p {
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+
+/* ini css untuk konten halaman 2 */
+
+.main2 {
+  padding: 20px;
+  width: 600px;
+  box-sizing: border-box;
+  float: left;
+}
+
+.main2 h2 {
+  font-family: monospace;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.main2 h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.main2 img {
+  float: left;
+}
+
+.main2 p {
+  text-align: justify;
+  line-height: 1.2;
+  text-indent: 15px;
+  margin-bottom: 20px;
+}
+
+.main2 ul li {
+  text-transform: capitalize;
+}
+
+.side2 {
+  width: 300px;
+  padding: 20px;
+  box-sizing: border-box;
+  float: left;
+}
+
+.side2 h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.side2 img {
+  border-radius: 70%;
+  float: left;
+  animation: anya 5s ease 1s infinite alternate-reverse both running;
+}
+
+.side2 p {
+  text-align: justify;
+  font-size: 13px;
+}
+
+.prev button {
+  width: 60px;
+  text-transform: capitalize;
+  transition: 100ms;
+}
+
+.prev button:hover {
+  width: 100px;
+  text-decoration: none;
+  color: blue;
+  font-family: monospace;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@keyframes anya {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100px;
+  }
+}
